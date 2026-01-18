@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { Header } from '@/components/layout/header';
+import { Footer } from '@/components/layout/footer';
 import { FactorioPanel } from '@/components/ui/factorio-panel';
 import { IndustrialButton } from '@/components/ui/industrial-button';
 import { ITEMS, PRICE_HISTORY, BID_ORDERS, ASK_ORDERS } from '@/lib/mock-data';
@@ -16,7 +17,7 @@ export default function Market() {
     const filteredItems = ITEMS;
 
     return (
-        <div className="min-h-screen">
+        <div className="min-h-screen pb-16">
             <Header />
 
             <main className="container mx-auto px-4 py-8">
